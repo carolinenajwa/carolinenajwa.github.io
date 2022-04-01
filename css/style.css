@@ -44,5 +44,48 @@ body {
     line-height: 1.6;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
 
+/* Typography */
+
+strong { font-weight: var(--fw-bold)}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    margin: 0;
+}
+
+h1 { font-size: var(--fs-h1)}
+h2 { font-size: var(--fs-h2)}
+h3 { font-size: var(--fs-h3)}
+
+.section__title {
+    margin-bottom: .25em;
+}
+
+.section__title--intro {
+    font-weight: var(--fw-reg);
+
+}
+
+.section__title--intro strong {
+    font-weight: var(--fw-reg);
+}
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+}
 
