@@ -461,6 +461,21 @@ social-list__item {
     padding: .5em;
 }
 
+/* individual portfolio item styles */
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* text inside portfolio item */
+.portfolio-item-individual p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 
 
