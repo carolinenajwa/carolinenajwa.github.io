@@ -45,7 +45,7 @@ html {
 
 body {
     background: black url("/img/bgnew.jpg");
-    color: var(--clr-dark);
+    color: var(--clr-light);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -282,6 +282,200 @@ h3 { font-size: var(--fs-h3)}
     left: -1.5em;
     width: calc(100% + 1.5em);
 }
+
+/* about */
+.profile__blurb {
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-reg);
+    text-align: left;
+}
+
+/* skills icon */
+/*
+.skills__section {
+    display: flex;
+    justify-content: center;
+
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 10px 50px 50px;
+
+}
+*/
+/* Create four equal columns that sits next to each other
+.column {
+    flex: 10%;
+    max-width: 50%;
+    padding: 0 1px;
+
+}
+
+.column img {
+    margin-top: 20px;
+    vertical-align: auto;
+    height: 60px;
+    width: auto;
+
+    }
+
+.skills__item-name {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1;
+    display: flex;
+
+}
+
+ */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.skills-section{
+    padding-top: 20px;
+}
+
+.skills-header{
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+}
+
+.skills-header:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background-color: #2ecc71;
+    border-radius: 2px;
+}
+
+.skills-container{
+    display: grid;
+    grid-tempLate-columns: repeat(5, 1fr);
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    grid-gap:1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+.skills-box{
+    padding: 1rem;
+    color: #000;
+    cursor:pointer;
+}
+
+.skills-box:hover .skills-img{
+    transform: translateX(-20px);
+}
+
+.skills-title{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.skills-title:after{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    rigth: 50%;
+    width:20px;
+    height:4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #2ecc71;
+    transition: .5s;
+}
+
+.skills-title:before{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    width:100px;
+    height:4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #2ecc71;
+}
+
+.skills-icons{
+    width:50px;
+    z-index:2;
+}
+
+.skills-img{
+    width:90px;
+    height:90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition: .5s;
+}
+
+.skills-img:after{
+    content: '';
+    position:absolute;
+    top:0;
+    left: 0;
+    width:50%;
+    height:90px;
+    background: rgba(100, 100, 100, 0.5);
+    border-radius: 45px 0 0 45px;
+}
+.skills-title h3{
+    color: #737171;
+    margin-top: 0.5rem;
+}
+@media screen and (max-width:990px){
+    .skills-container{
+        grid-tempLate-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+}
+
+@media screen and (max-width:650px){
+    .skills-container{
+        grid-tempLate-columns:2fr;
+        padding: 2rem 50px;
+    }
+}
+
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
 
 /* my services section */
 
