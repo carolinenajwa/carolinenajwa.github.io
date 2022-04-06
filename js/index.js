@@ -1,3 +1,11 @@
+window.onload = function() {
+    Particles.init({
+        selector: '.background'
+    });
+};
+
+
+
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav__link');
 
@@ -10,3 +18,4 @@ navLinks.forEach(link => {
         document.body.classList.remove('nav-open')
     })
 })
+
