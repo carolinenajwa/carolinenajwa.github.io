@@ -14,8 +14,8 @@
     --fw-bold: 900;
 
     --clr-light:#fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-dark: #000000;
+    --clr-accent: #21a262;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -462,7 +462,7 @@ social-list__item {
     padding: .5em;
 }
 
-/* individual portfolio item styles */
+/* particles */
 html,
 body {
     margin: 0;
@@ -470,9 +470,16 @@ body {
 }
 
 .background {
-    position: absolute;
+    position: fixed;
     display: block;
     top: 0;
     left: 0;
     z-index: 0;
 }
+
+/* /particles */
+ .particles__background--back {
+     position: fixed;
+     width: 100%;
+     z-index: -2;
+ }
