@@ -38,19 +38,19 @@
 }
 
 /* general styles */
-/*
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-  /* background: black url("/img/bgnew.jpg");
+    background: black url("/img/bgnew.jpg");
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
-    */
+}
 
 
 section {
@@ -531,11 +531,11 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #b61924;
-    background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+    z-index: 0;
+
 }
 
 
@@ -543,7 +543,7 @@ body {
 html,body{
     width:100%;
     height:100%;
-    background:#111;
+
 }
 
 html{
