@@ -13,7 +13,7 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light:#fff;
+    --clr-light: #fdfdfd;
     --clr-dark: #000000;
     --clr-accent: #21a262;
 
@@ -249,7 +249,7 @@ h3 { font-size: var(--fs-h3)}
     position: relative;
 }
 
-.into__img {
+.intro__img {
     box-shadow: var(--bs);
 
 }
@@ -578,6 +578,8 @@ h3 { font-size: var(--fs-h3)}
     text-align: center;
 }
 
+
+
 .section__subtitle--work {
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
@@ -696,11 +698,45 @@ h3 { font-size: var(--fs-h3)}
 }
 
 .social-list {
-    list-style: none;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.socials__github,
+.socials__email {
     display: flex;
     justify-content: center;
-    margin: 2em 0 0;
-    padding:0;
+    align-items: center;
+    height: 35px;
+
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.socials__github:hover,
+.socials__email:hover {
+    transform: scale(1.2);
+}
+
+.socials__github {
+margin-right:10px;
+}
+
+.socials__email {
+    margin-right:10px;
+}
+
+.socials__github img,
+.socials__email img {
+    height: 40px;
+    display: flex;
+}
+
+.copyright {
+    color: var(--clr-accent);
+    font-size: 10px;
+    font-weight: 500;
 }
 
 social-list__item {
@@ -726,12 +762,6 @@ body {
 }
 
 /* /particles */
-/*
- .particles__background--back {
-     position: fixed;
-     width: 100%;
-     z-index: -2;
- }*/
 
 /* ---- stats.js ---- */
 
@@ -822,8 +852,6 @@ canvas{
     justify-content: center;
 
     z-index: 10;
-
-    margin-bottom: 10rem;
 }
 
 @media (max-width: 700px) {
@@ -870,8 +898,8 @@ canvas{
 }
 
 .contact__text {
-    font-size: 1.8rem;
-    margin-bottom: 6rem;
+    font-size: var(--fs-body);
+    margin-bottom: 2rem;
 }
 
 .contact__form {
@@ -885,11 +913,11 @@ canvas{
 .contact__form-email {
     margin-bottom: 6px;
     padding: 1rem;
-    height: 4rem;
+    height: 3rem;
 }
 
 .contact__form-message {
-    height: 12rem;
+    height: 6rem;
     padding: 1rem;
 }
 
@@ -915,7 +943,7 @@ canvas{
 .contact__form-submit:after {
     position: absolute;
     content: '';
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid var(--clr-accent);
 
     width: calc(100% + 2rem);
 // height: 100%;
@@ -963,8 +991,9 @@ canvas{
     border: none;
     color: inherit;
     background-color: var(--clr-light);
-    font-size: 1.6rem;
-    font-family: monserrat, sans-serif;
+    color: var(--clr-dark);
+    font-size: 1rem;
+    font-font: var(--ff-primary);
 
     border-left: 2px solid transparent;
 
@@ -1000,19 +1029,19 @@ canvas{
 .contact__form input::placeholder,
 .contact__form textarea::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: red;
+    color: #000000;
     opacity: 1; /* Firefox */
 
 }
 
 :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: red;
+    color: #000000;
 }
 
 ::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: red;
+    color: #000000;
 }
 
 .contact__form-error-submit {
@@ -1035,9 +1064,15 @@ canvas{
 }
 
 .input-error {
-    border-left: 2px solid red !important;
-
+    border-left: 2px solid #000000 !important;
 }
+
+
+
+
+
+
+
 
 
 
