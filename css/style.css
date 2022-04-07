@@ -117,9 +117,14 @@ h3 { font-size: var(--fs-h3)}
     display: block;
 }
 
+.section__title--intro  {
+    z-index: 6;
+}
+
 .section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
+    z-index: 6;
 
 }
 
@@ -129,6 +134,10 @@ h3 { font-size: var(--fs-h3)}
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+}
+
+.section__subtitle--intro {
+    margin-bottom: 10em;
 }
 
 /* header */
@@ -247,6 +256,8 @@ h3 { font-size: var(--fs-h3)}
 
 .intro {
     position: relative;
+    height: 100%;
+
 }
 
 .intro__img {
@@ -484,15 +495,17 @@ h3 { font-size: var(--fs-h3)}
 /* my services section */
 
 .my-services {
+    position: relative;
+    z-index: 10;
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    background-blend-mode: multiply;
     text-align: center;
 }
 
 .section__title--services {
     color: var(--clr-accent);
     position: relative;
+
 }
 
 .section__title--services::after {
@@ -812,7 +825,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    z-index: 0;
+    z-index: 1;
 
 }
 
