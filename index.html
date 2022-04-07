@@ -27,9 +27,6 @@
     <!-- particles.js container -->
     <div id="particles-js"></div>
         <header>
-            <div class="logo">
-                <img src="" alt="logo photo">
-            </div>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button>
@@ -205,21 +202,80 @@
         <div class="portfolio">
 
             <!-- portfolio item 01 -->
+            <div class="portfolio__portfolio--01">
+
+                <div class="project__info">
+                    <h3 class="project__title">Coronavirus Tracker<br/> Application</h3>
+                        <p class="project__description">Developed an application to track Coronavirus confirmed cases across the globe by implementing a Spring Boot framework.</p>
+                    <a href="https://github.com/carolinenajwa/coronavirus-tracker.git" target="_blank">
+                        <div class="project__code">view code</div>
+                    </a>
+                </div>
+
             <a href="#" class="portfolio__item">
                 <img src="img/coronavirus-tracker.png" alt="picture of portfolio 01" class="portfolio__img">
             </a>
+            </div>
 
             <!-- portfolio item 02 -->
+            <div class="portfolio__portfolio--02">
+                <div class="project__info">
+                    <h3 class="project__title">Portfolio<br/></h3>
+                    <p class="project__description">Implemented clean design on responsive website using JavaScript, HTML,
+                        & CSS incorporating JavaScript animation. Currently upgrading to a fully mobile-responsive page incorporating
+                        React.</p>
+                    <a href="https://github.com/carolinenajwa/carolinenajwa.github.io" target="_blank">
+                        <div class="project__code">view code</div>
+                    </a>
+                </div>
+
             <a href="#" class="portfolio__item">
                 <img src="img/portfolio.png" alt="picture of portfolio 02" class="portfolio__img">
             </a>
+            </div>
 
             <!-- portfolio item 03 -->
+            <div class="portfolio__portfolio--03">
+                <div class="project__info">
+                    <h3 class="project__title">Symbolic Calculator<br/></h3>
+                    <p class="project__description">Interactive calculator that implements a basic input parsing using a tokenizing wrapper class and an abstract
+                        syntax tree to manipulate expressions.</p>
+                    <a href="https://github.com/carolinenajwa/Symbolic-Calculator" target="_blank">
+                        <div class="project__code">view code</div>
+                    </a>
+                </div>
             <a href="#" class="portfolio__item">
                 <img src="img/symboliccalc.png" alt="picture of portfolio 03" class="portfolio__img">
             </a>
+            </div>
+
         </div>
     </section> <!-- / my work -->
+
+    <!-- contact -->
+
+    <!-- contact -->
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="contact__heading section-heading">Contact</h2>
+        <p class="contact__text">Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.</p>
+        <form class="contact__form" action="https://formspree.io/f/xzboanza" method="POST">
+            <input class="contact__form-name" name="name" placeholder="Name"/>
+            <input class="contact__form-email" type="email" name="_replyto" placeholder="Email"/>
+            <textarea class="contact__form-message" name="message" placeholder="Message"></textarea>
+            <div class="contact__form-error-submit">
+                <div class="form-error">
+                    <div class="form-error__name">Please enter your name.</div>
+                    <div class="form-error__email">Please enter a valid email.</div>
+                    <div class="form-error__msg">Please enter a message.</div>
+                </div>
+                <button type="button" class="contact__form-submit">Submit</button>
+            </div>
+        </form>
+    </section> <!-- / contact -->
+
+
+
 
     <!-- footer -->
     <footer class="footer">
@@ -252,16 +308,9 @@
 
 
     <!-- particles -->
-<!--
-        <div class="particles__background particles__background--back">
-    <canvas class="background"></canvas>
-        </div>
-    <script src="/dist/particles.min.js"></script>
--->
-        <!-- / particles -->
         <!-- count particles -->
         <div class="count-particles">
-            <span class="js-count-particles">--</span> particles
+            <span class="js-count-particles"></span>
         </div>
 
         <!-- particles.js container -->
@@ -269,9 +318,6 @@
         <!-- scripts -->
         <script src="/particles.js"></script>
         <script src="/js/index.js"></script>
-
-        <!-- stats.js -->
-        <script src="js/lib/stats.js"></script>
 
         <script>
             var count_particles, stats, update;

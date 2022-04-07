@@ -71,7 +71,7 @@ img {
 
 .btn {
     display: inline-block;
-    padding: .5em 2.5em;
+    padding:1em 4em;
     background: var(--clr-accent);
     color: var(--clr-dark);
     text-decoration: none;
@@ -81,6 +81,8 @@ img {
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+
+    margin-top: 2em;
 }
 
 .btn:hover {
@@ -288,6 +290,8 @@ h3 { font-size: var(--fs-h3)}
     font-size: var(--fs-h3);
     font-weight: var(--fw-reg);
     text-align: left;
+    margin-left: 5em;
+    margin-right: 5em;
 }
 
 /* skills icon */
@@ -481,8 +485,6 @@ h3 { font-size: var(--fs-h3)}
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url("../img/services-bg.jpg");
-    background-size: cover;
     color: var(--clr-light);
     background-blend-mode: multiply;
     text-align: center;
@@ -561,8 +563,6 @@ h3 { font-size: var(--fs-h3)}
         padding-right: calc(200px + 4em);
     }
 
-
-
     .about-me__img {
         grid-area: img;
         position: relative;
@@ -581,10 +581,10 @@ h3 { font-size: var(--fs-h3)}
 .section__subtitle--work {
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
-    margin-bottom: 2em;
 }
 
 .portfolio {
+    padding-top: 40px;
     display: grid;
     /* create columns based on size of screen*/
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -611,6 +611,60 @@ h3 { font-size: var(--fs-h3)}
     transform: scale(1.2);
     opacity: .75;
 }
+
+.project__description {
+    position: relative;
+    margin-top: 1rem;
+    font-size: 15px;
+    font-weight: 500;
+
+    z-index: 999909999;
+}
+@media (max-width: 560px) {
+    .project__description {
+        margin-top: 2rem;
+    }
+}
+
+.project__title {
+    position: relative;
+    z-index: 66;
+    font-size: var(--fs-h3);
+// font-weight: 700;
+}
+
+.project__info {
+    display: grid;
+    text-align: left;
+    top: 2rem;
+
+    height: fit-content;
+    padding: 1rem;
+    z-index: 9999999;
+
+}
+
+.project__code {
+    display: inline-block;
+    padding:.3em 2em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+
+    margin-top: 2em;
+
+}
+
+.project__code:hover {
+    transform: scale(1.1);
+}
+
 
 /* footer section */
 
@@ -755,6 +809,241 @@ canvas{
 
 
 
-/* stop edit */
+/* contact */
+
+.contact {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 10;
+
+    margin-bottom: 10rem;
+}
+
+@media (max-width: 700px) {
+    .contact {
+        width: 400px;
+    }
+}
+
+@media (max-width: 470px) {
+    .contact {
+        width: 330px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact {
+        width: 260px;
+    }
+}
+
+.contact__heading {
+    margin-top: 1rem !important;
+    margin-bottom: 3rem !important;
+    color: var(--clr-accent);
+}
+
+.contact__heading:before {
+    position: absolute;
+    content: '';
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: 3.5rem;
+    top: 6.3rem;
+    font-size: var(--fs-h1);
+
+    z-index: -1;
+}
+
+@media (max-width: 770px) {
+    .contact__heading:before {
+    }
+}
+
+.contact__text {
+    font-size: 1.8rem;
+    margin-bottom: 6rem;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__form-name,
+.contact__form-email {
+    margin-bottom: 6px;
+    padding: 1rem;
+    height: 4rem;
+}
+
+.contact__form-message {
+    height: 12rem;
+    padding: 1rem;
+}
+
+.contact__form-submit {
+    align-self: flex-start;
+    position: relative;
+    padding: 0.6rem 1rem;
+    width: fit-content;
+
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.contact__form-submit:hover {
+    color: black;
+    font-weight: 700;
+}
+
+.contact__form-submit:after {
+    position: absolute;
+    content: '';
+    border-bottom: 2px solid red;
+
+    width: calc(100% + 2rem);
+// height: 100%;
+    left: -14%;
+    top: 0.5rem;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+
+    transform-origin: bottom;
+    transition: all 0.2s;
+
+// left: -8rem;
+
+    z-index: -1
+
+}
+
+.contact__form-submit:hover:after {
+    transform: scaleY(17.5);
+}
+
+@media (max-width: 1500px) {
+    .contact__form-submit:hover:after {
+        transform: scaleY(16.5);
+    }
+}
+
+@media (max-width: 1200px) {
+    .contact__form-submit:hover:after {
+        transform: scaleY(14);
+    }
+}
+
+@media (max-width: 770px) {
+    .contact__form-submit:hover:after {
+        transform: scaleY(12.5);
+    }
+}
+
+.contact__form input,
+.contact__form textarea {
+    width: 500px;
+    resize: none;
+    border: none;
+    color: inherit;
+    background-color: var(--clr-light);
+    font-size: 1.6rem;
+    font-family: monserrat, sans-serif;
+
+    border-left: 2px solid transparent;
+
+    border-radius: 0;
+}
+
+@media (max-width: 700px) {
+    .contact__form input,
+    .contact__form textarea {
+        width: 400px;
+    }
+}
+
+@media (max-width: 470px) {
+    .contact__form input,
+    .contact__form textarea {
+        width: 330px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact__form input,
+    .contact__form textarea {
+        width: 260px;
+    }
+}
+
+.contact__form input:focus,
+.contact__form textarea:focus {
+    outline: none;
+}
+
+.contact__form input::placeholder,
+.contact__form textarea::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1; /* Firefox */
+
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: red;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: red;
+}
+
+.contact__form-error-submit {
+    margin-top: 1.5rem;
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-error {
+    align-self: start;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.form-error > * {
+    display: none;
+}
+
+.input-error {
+    border-left: 2px solid red !important;
+
+}
+
+
+
+
+
+
+
 
 
