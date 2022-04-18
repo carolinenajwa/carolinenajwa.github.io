@@ -301,8 +301,8 @@ h3 { font-size: var(--fs-h3)}
     font-size: var(--fs-h3);
     font-weight: var(--fw-reg);
     text-align: left;
-    margin-left: 5em;
-    margin-right: 5em;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
 }
 
 /* skills icon */
