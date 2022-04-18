@@ -13,7 +13,7 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: #fdfdfd;
+    --clr-light: rgba(255, 253, 253, 0.89);
     --clr-dark: #000000;
     --clr-accent: #21a262;
 
@@ -50,6 +50,7 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+
 }
 
 
@@ -305,45 +306,6 @@ h3 { font-size: var(--fs-h3)}
     margin-right: 2.5em;
 }
 
-/* skills icon */
-/*
-.skills__section {
-    display: flex;
-    justify-content: center;
-
-}
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5px 10px 50px 50px;
-
-}
-*/
-/* Create four equal columns that sits next to each other
-.column {
-    flex: 10%;
-    max-width: 50%;
-    padding: 0 1px;
-
-}
-
-.column img {
-    margin-top: 20px;
-    vertical-align: auto;
-    height: 60px;
-    width: auto;
-
-    }
-
-.skills__item-name {
-    font-size: 1em;
-    font-weight: 600;
-    line-height: 1;
-    display: flex;
-
-}
-
- */
 *{
     padding: 0;
     margin: 0;
@@ -385,6 +347,7 @@ h3 { font-size: var(--fs-h3)}
     padding: 1rem 80px;
     font-size: 1.2rem;
 }
+
 .skills-box{
     padding: 1rem;
     color: #000;
@@ -467,12 +430,15 @@ h3 { font-size: var(--fs-h3)}
 
 @media screen and (max-width:650px){
     .skills-container{
-        grid-tempLate-columns:2fr;
-        padding: 2rem 50px;
+        grid-tempLate-columns: repeat(2, 1fr);
+        padding: 3rem 50px;
+    }
+
+
+    .skills-title:before {
+        width: 50%;
     }
 }
-
-
 
 
 /* Responsive layout - makes a two column-layout instead of four columns */
