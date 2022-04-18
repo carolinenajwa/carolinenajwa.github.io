@@ -251,6 +251,26 @@ h3 { font-size: var(--fs-h3)}
     right: 0;
 }
 
+/* sticky back to top */
+.top {
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #000;
+    border-radius: 100px;
+    z-index: 100;
+
+    position: sticky;
+    bottom: 20px;
+    float: right;
+
+    margin-right: 1em;
+
+}
+
+
+
 
 
 /* intro section */
